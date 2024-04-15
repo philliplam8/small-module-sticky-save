@@ -33,7 +33,7 @@ function App() {
           <FormControlLabel
             control={<Switch defaultChecked />}
             label="Label"
-            onChange={handleSectionChange}
+            onClick={handleSectionChange}
           />
           <FormControlLabel
             required
@@ -54,7 +54,7 @@ function App() {
         <h2>Turn on/off settings according to your personal preference!</h2>
       </div>
       <div className="flex flex-col gap-4 p-3 bg-slate-200">
-        {[1, 2, 3].map((element) => {
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((element) => {
           return (
             <Section
               label={`Setting ${element}`}

@@ -6,7 +6,7 @@ export const Card = (props: {
   hasUnsavedChanges?: boolean;
 }) => {
   return (
-    <div className="w-[500px] flex flex-col gap-4 justify-between bg-white text-black rounded-[25px] p-5">
+    <div className="flex flex-col gap-4 justify-between bg-white text-black rounded-[25px] p-5">
       <div className="w-full flex flex-row gap-3 items-center">
         <h1 className="text-xl">{props.headerLabel}</h1>
         {props.hasUnsavedChanges && (
